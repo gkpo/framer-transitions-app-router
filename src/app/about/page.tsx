@@ -2,21 +2,21 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import styles from "../styles/Page.module.css";
+import styles from "../../styles/Page.module.css";
 
-export default function Home() {
+export default function About() {
   return (
     <div className={styles.page}>
-      <h1>Home</h1>
+      <h1>About</h1>
 
       <motion.div
         className={styles.box}
         initial={{ x: "-100vw" }}
         animate={{ x: 0 }}
         exit={{ x: "100vw" }}
-        transition={{ delay: 0.2, duration: 1 }}
+        transition={{ delay: 0.3, duration: 1 }}
       >
-        First Box
+        Section One
       </motion.div>
 
       <motion.div
@@ -24,9 +24,9 @@ export default function Home() {
         initial={{ x: "-100vw" }}
         animate={{ x: 0 }}
         exit={{ x: "100vw" }}
-        transition={{ delay: 0.5, duration: 1 }}
+        transition={{ delay: 0.6, duration: 1 }}
       >
-        Second Box
+        Section Two
       </motion.div>
 
       <motion.div
@@ -34,12 +34,22 @@ export default function Home() {
         initial={{ x: "-100vw" }}
         animate={{ x: 0 }}
         exit={{ x: "100vw" }}
-        transition={{ delay: 0.8, duration: 1 }}
+        transition={{ delay: 0.9, duration: 1 }}
       >
-        Third Box
+        Section Three
       </motion.div>
 
-      <Link href="/about">Go to About</Link>
+      <motion.div
+        className={styles.box}
+        initial={{ x: "-100vw" }}
+        animate={{ x: 0 }}
+        exit={{ x: "100vw" }}
+        transition={{ delay: 1.2, duration: 1 }}
+      >
+        Section Four
+      </motion.div>
+
+      <Link href="/">Back to Home</Link>
     </div>
   );
 }

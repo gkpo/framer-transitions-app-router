@@ -1,0 +1,12 @@
+.page {
+  padding: 2rem;
+}
+
+.box {
+  font-family: arial;
+  background-color: #5fac8c;
+  margin: 1rem 0;
+  padding: 1.5rem;
+  border-radius: 10px;
+  color: #fff;
+}
